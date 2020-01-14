@@ -222,7 +222,7 @@ public class DatabaseUtil {
         String tableName = "t_run_shop";
         List<BaseData> table = getBaseDataList("t_run_shop");
 
-        System.out.println(getCommentByTableName("t_run_shop"));
+       // System.out.println(getCommentByTableName("t_run_shop"));
     }
 
     public static List<BaseData> getBaseDataList(String tableName){

@@ -3,7 +3,7 @@ package ${serverPackage}.converter;
 import ${serverPackage}.entity.${modelNameUpperCamel};
 import ${clientPackage}.vo.Req${modelNameUpperCamel}VO;
 import ${clientPackage}.vo.Res${modelNameUpperCamel}VO;
-import ${clientPackage}.vo.ShopDTO;
+import ${clientPackage}.vo.${modelNameUpperCamel}DTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 import java.util.List;
@@ -36,7 +36,7 @@ public interface ${modelNameUpperCamel}Converter {
 	
 	 /**
      *
-     * @param ${modelNameUpperCamel}DTO
+     * @param ${modelNameLowerCamel}DTO
      * @return
      */
     ${modelNameUpperCamel} ${modelNameLowerCamel}DTO2Bean(${modelNameUpperCamel}DTO ${modelNameLowerCamel}DTO);

@@ -56,27 +56,6 @@ public class ${modelNameUpperCamel}ServiceImpl implements ${modelNameUpperCamel}
 
     @Override
     public ResponseResult add(${modelNameUpperCamel}DTO ${modelNameLowerCamel}DTO) {
-        Example queryAccount = new Example(${modelNameUpperCamel}.class);
-        if (!DataUtil.isNullOrEmpty(${modelNameLowerCamel}DTO.getAccount())) {
-            queryAccount.and().andEqualTo("deleted",  SysConsts.SYS_NO)
-                    .andEqualTo("account",${modelNameLowerCamel}DTO.getAccount())
-                    .andEqualTo("organizationEntityId", WorkUtil.getOrgId());
-            List<${modelNameUpperCamel}>  results = ${modelNameLowerCamel}Mapper.selectByExample(queryAccount);
-            if (results.size()>0){
-                throw new MyException(${modelNameLowerCamel}DTO, "已经有相同账号的店铺！");
-            }
-        }
-
-        Example queryNamePlatformId = new Example(${modelNameUpperCamel}.class);
-        queryNamePlatformId.and().andEqualTo("deleted",  SysConsts.SYS_NO)
-                .andEqualTo("name",${modelNameLowerCamel}DTO.getName())
-                .andEqualTo("platformId",${modelNameLowerCamel}DTO.getPlatformId());
-        List<${modelNameUpperCamel}> results = ${modelNameLowerCamel}Mapper.selectByExample(queryNamePlatformId);
-        if (results.size()>0){
-            throw new MyException(${modelNameLowerCamel}DTO, "已经在该平台上有相同名称的店铺！");
-        }
-
-
         ${modelNameUpperCamel} bean =  ${modelNameUpperCamel}Converter.INSTANCE.${modelNameLowerCamel}DTO2Bean(${modelNameLowerCamel}DTO);
         bean.assignDefault();
         ${modelNameLowerCamel}Mapper.insert(bean);

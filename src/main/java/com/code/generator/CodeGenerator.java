@@ -25,14 +25,14 @@ public class CodeGenerator {
     /**
      * JDBC配置，请修改为你项目的实际配置
      */
-    public static final String JDBC_URL = "jdbc:mysql://183.131.202.92:3306/ebb_shop?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false";
+    public static final String JDBC_URL = "jdbc:mysql://61.174.254.205:3306/ebb?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false";
     public static final String JDBC_USERNAME = "root";
     public static final String JDBC_PASSWORD = "w8Kz4#mj@";
     public static final String JDBC_DIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
     /**
      * 模块名称
      */
-    static final String BASE_MODULE_NAME = "shop";
+    static final String BASE_MODULE_NAME = "settingconfig";
     // static final String MODULE_NAME = "ipplatform";
 
     /**
@@ -201,7 +201,8 @@ public class CodeGenerator {
         //genCode("t_run_shop_ip","ShopIp");
         //genCode("t_run_shop_platform","ShopPlatform");
         //genCode("t_run_shop_user","ShopUser");
-        genCode("t_run_shop", "Shop");
+        genCode("t_sys_browser", "Browser");
+        genCode("t_sys_language", "Language");
         //genMain("EbbShopApplication");
 
         //ip_platform

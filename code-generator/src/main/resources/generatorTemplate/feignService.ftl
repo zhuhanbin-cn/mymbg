@@ -30,12 +30,12 @@ public interface ${modelNameUpperCamel}ServiceFeign {
 	 * @return ResponseResult
 	 */
 	@PostMapping("${apiurl}/getdetail")
-	ResponseResult<ResShopVO> getdetail(@RequestBody Req${modelNameUpperCamel}VO req${modelNameUpperCamel}VO);
+	ResponseResult<Res${modelNameUpperCamel}VO> getdetail(@RequestBody Req${modelNameUpperCamel}VO req${modelNameUpperCamel}VO);
 
 
 	/**
 	 * 新增${comment}
-	 * @param reqShopVO
+	 * @param req${modelNameUpperCamel}VO
 	 * @return ResponseResult
 	 */
 	@PostMapping("${apiurl}/add")
@@ -43,7 +43,7 @@ public interface ${modelNameUpperCamel}ServiceFeign {
 
 	/**
 	 * 更新${comment}
-	 * @param reqShopVO
+	 * @param req${modelNameUpperCamel}VO
 	 * @return ResponseResult
 	 */
 	@PostMapping("${apiurl}/update")
@@ -51,7 +51,7 @@ public interface ${modelNameUpperCamel}ServiceFeign {
 
 	/**
 	 * 删除${comment}
-	 * @param reqShopVO
+	 * @param req${modelNameUpperCamel}VO
 	 * @return ResponseResult
 	 */
 	@PostMapping("${apiurl}/delete")
