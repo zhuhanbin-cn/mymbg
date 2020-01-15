@@ -29,6 +29,7 @@ public class ${modelNameUpperCamel}ServiceImpl implements ${modelNameUpperCamel}
     @Override
     public ResponseResult<List<Res${modelNameUpperCamel}VO>> getList(Req${modelNameUpperCamel}VO req${modelNameLowerCamel}VO) {
         Example queryExample = new Example(${modelNameUpperCamel}.class);
+        queryExample.and().andEqualTo("deleted", SysConsts.SYS_NO);
         List<${modelNameUpperCamel}> results = ${modelNameLowerCamel}Mapper.selectByExample(queryExample);
         return ResponseResult.success(${modelNameUpperCamel}Converter.INSTANCE.${modelNameLowerCamel}s2Res${modelNameUpperCamel}VOs(results));
     }

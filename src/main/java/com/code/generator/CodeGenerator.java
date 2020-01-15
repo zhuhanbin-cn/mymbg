@@ -353,7 +353,7 @@ public class CodeGenerator {
         //Mapper.xml
         SqlMapGeneratorConfiguration sqlMapGeneratorConfiguration = new SqlMapGeneratorConfiguration();
         sqlMapGeneratorConfiguration.setTargetProject(PROJECT_PATH + RESOURCES_PATH);
-        sqlMapGeneratorConfiguration.setTargetPackage("mapper");
+        sqlMapGeneratorConfiguration.setTargetPackage(MAPPER_PACKAGE);
         context.setSqlMapGeneratorConfiguration(sqlMapGeneratorConfiguration);
 
 

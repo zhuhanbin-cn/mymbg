@@ -1,32 +1,32 @@
 
+fsquid:S1192’"GDefine a constant instead of duplicating this literal "VO.ftl" 3 times.(ˆüÏ¶8²Ð íð-
 lsquid:UselessImportCheck"<Remove this unused import 'java.lang.annotation.Annotation'.(¦Ÿàáûÿÿÿÿ8‡ÇÄîð-
-fsquid:S00112ƒ"FDefine and throw a dedicated exception instead of using a generic one.(Ñ©Ýç8§ÿŽíð-
-isquid:UnusedPrivateMethodÒ"7Remove this unused private "packageConvertPath" method.(á»¦²üÿÿÿÿ8§ÿŽíð-
-W
-squid:S106"9Replace this use of System.out or System.err by a logger.(ôãõ¨8§ÿŽíð-
-fsquid:S1192‘"GDefine a constant instead of duplicating this literal "VO.ftl" 3 times.(ˆüÏ¶8²Ð íð-
-xsquid:S2293°"YReplace the type specification in this constructor call with the diamond operator ("<>").(¨ÝÜ 8ã™ëîð-
-lsquid:S5361Ê"HReplace this call to "replaceAll()" by a call to the "replace()" method.(´ïÌ™ÿÿÿÿÿ8§ÿŽíð-
-}squid:S2293ÿ"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ú²ïðÿÿÿÿÿ8§ÿŽíð-
-\
-squid:S106Œ"9Replace this use of System.out or System.err by a logger.(¡Þò›øÿÿÿÿ8§ÿŽíð-
-jsquid:CommentedOutCodeLineÐ"<This block of commented-out lines of code should be removed.(Ã°þë8§ÿŽíð-
-ysquid:S00115Q"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(±àŠŸ8§ÿŽíð-
-jsquid:CommentedOutCodeLineÍ"<This block of commented-out lines of code should be removed.(¬¬¥²8ÒòÊîð-
-:squid:S3626¶"Remove this redundant jump.(ÉŠ©ƒ8ª‰œïð-
-W
-squid:S106¯"9Replace this use of System.out or System.err by a logger.(ŠË’¢8§ÿŽíð-
-xsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(®Ø‡Ú8§ÿŽíð-
-fsquid:S00112‡"FDefine and throw a dedicated exception instead of using a generic one.(üŽèô8§ÿŽíð-
-ysquid:S2068"V'PASSWORD' detected in this expression, review this potentially hard-coded credential.(¹î²ÿúÿÿÿÿ8§ÿŽíð-
-jsquid:CommentedOutCodeLineí"<This block of commented-out lines of code should be removed.(ôÞø¥8Ÿ•íð-
-`squid:UnusedPrivateMethod×"3Remove this unused private "firstToCapital" method.(ÞÉ¦¢8§ÿŽíð-
+:squid:S3626·"Remove this redundant jump.(ÉŠ©ƒ8ª‰œïð-
+jsquid:CommentedOutCodeLineû"<This block of commented-out lines of code should be removed.(È¾õ8§ÿŽíð-
+}squid:S2293€"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ú²ïðÿÿÿÿÿ8§ÿŽíð-
+fsquid:S00112ˆ"FDefine and throw a dedicated exception instead of using a generic one.(üŽèô8§ÿŽíð-
+Msquid:S1481á".Remove this unused "tableName" local variable.(Öâýº8§ÿŽíð-
 jsquid:CommentedOutCodeLineÉ"<This block of commented-out lines of code should be removed.(ìÆµ8§ÿŽíð-
-osquid:CommentedOutCodeLineÕ"<This block of commented-out lines of code should be removed.(â¦°ðùÿÿÿÿ8§ÿŽíð-
-Msquid:S1481à".Remove this unused "tableName" local variable.(Öâýº8§ÿŽíð-
 \
-squid:S106Ž"9Replace this use of System.out or System.err by a logger.(‘œÒ¡ýÿÿÿÿ8§ÿŽíð-
+squid:S106"9Replace this use of System.out or System.err by a logger.(¡Þò›øÿÿÿÿ8§ÿŽíð-
+osquid:CommentedOutCodeLineÖ"<This block of commented-out lines of code should be removed.(â¦°ðùÿÿÿÿ8§ÿŽíð-
 ~squid:S00115R"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¶çü øÿÿÿÿ8§ÿŽíð-
+ysquid:S2068"V'PASSWORD' detected in this expression, review this potentially hard-coded credential.(¹î²ÿúÿÿÿÿ8§ÿŽíð-
+jsquid:CommentedOutCodeLineÎ"<This block of commented-out lines of code should be removed.(¬¬¥²8ÒòÊîð-
+W
+squid:S106Ž"9Replace this use of System.out or System.err by a logger.(ôãõ¨8§ÿŽíð-
+jsquid:CommentedOutCodeLineÑ"<This block of commented-out lines of code should be removed.(Ã°þë8§ÿŽíð-
+xsquid:S2293‚"YReplace the type specification in this constructor call with the diamond operator ("<>").(®Ø‡Ú8§ÿŽíð-
+lsquid:S5361Ë"HReplace this call to "replaceAll()" by a call to the "replace()" method.(´ïÌ™ÿÿÿÿÿ8§ÿŽíð-
+jsquid:CommentedOutCodeLineî"<This block of commented-out lines of code should be removed.(ôÞø¥8Ÿ•íð-
+fsquid:S00112²"FDefine and throw a dedicated exception instead of using a generic one.(æª‘Ë8§ÿŽíð-
+ysquid:S00115Q"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(±àŠŸ8§ÿŽíð-
+\
+squid:S106"9Replace this use of System.out or System.err by a logger.(‘œÒ¡ýÿÿÿÿ8§ÿŽíð-
+xsquid:S2293±"YReplace the type specification in this constructor call with the diamond operator ("<>").(¨ÝÜ 8ã™ëîð-
+fsquid:S00112„"FDefine and throw a dedicated exception instead of using a generic one.(Ñ©Ýç8§ÿŽíð-
 nsquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(å•Æøÿÿÿÿ8§ÿŽíð-
-jsquid:CommentedOutCodeLineú"<This block of commented-out lines of code should be removed.(È¾õ8§ÿŽíð-
-fsquid:S00112±"FDefine and throw a dedicated exception instead of using a generic one.(æª‘Ë8§ÿŽíð-
+W
+squid:S106°"9Replace this use of System.out or System.err by a logger.(ŠË’¢8§ÿŽíð-
+isquid:UnusedPrivateMethodÓ"7Remove this unused private "packageConvertPath" method.(á»¦²üÿÿÿÿ8§ÿŽíð-
+`squid:UnusedPrivateMethodØ"3Remove this unused private "firstToCapital" method.(ÞÉ¦¢8§ÿŽíð-

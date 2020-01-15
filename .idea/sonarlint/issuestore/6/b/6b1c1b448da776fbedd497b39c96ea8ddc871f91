@@ -1,34 +1,32 @@
 
-`squid:S2259W"BA "NullPointerException" could be thrown; "conn" is nullable here.(´ÅŠ¼8òÁñíğ-
->squid:S20686" Remove this hard-coded password.(Î¶ÏÁ8òÁñíğ-
-W
-squid:S106á"9Replace this use of System.out or System.err by a logger.(‚õ¸Â8òÁñíğ-
+asquid:S2259"BA "NullPointerException" could be thrown; "conn" is nullable here.(´ÅŠ¼8òÁñíğ-
+ssquid:S2068#"V'PASSWORD' detected in this expression, review this potentially hard-coded credential.(é­›8‘¯´‘ú-
+|squid:S2293t"YReplace the type specification in this constructor call with the diamond operator ("<>").(–°áĞşÿÿÿÿ8òÁñíğ-
+}squid:S2293›"YReplace the type specification in this constructor call with the diamond operator ("<>").(…İåúÿÿÿÿ8òÁñíğ-
+esquid:S2095¿"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(—Ï‰88òÁñíğ-
+\squid:S1854Ş"=Remove this useless assignment to local variable "tableName".(¯ì€š8òÁñíğ-
+osquid:CommentedOutCodeLineá"<This block of commented-out lines of code should be removed.(¹ï€Õÿÿÿÿÿ8úØ‘ú-
+Gsquid:S1148É"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8òÁñíğ-
+Lsquid:S1481»"(Remove this unused "map" local variable.(™Ş­Ôşÿÿÿÿ8òÁñíğ-
+@squid:S1643›"Use a StringBuilder instead.(Œıû£ùÿÿÿÿ8òÁñíğ-
+Gsquid:S1148¤"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8òÁñíğ-
+}squid:S2293è"YReplace the type specification in this constructor call with the diamond operator ("<>").(±êı€ıÿÿÿÿ8òÁñíğ-
+Ksquid:S1905¾",Remove this unnecessary cast to "Statement".(§ñÆ­8òÁñíğ-
+Xsquid:S1854ß"9Remove this useless assignment to local variable "table".(ŒÁ“Œ8òÁñíğ-
+Tsquid:S1481—"0Remove this unused "columnTypes" local variable.(–°áĞşÿÿÿÿ8òÁñíğ-
+`squid:S2259z"BA "NullPointerException" could be thrown; "conn" is nullable here.(´ÅŠ¼8òÁñíğ-
+>squid:S20686" Remove this hard-coded password.(Î¶ÏÁ8‘¯´‘ú-
+[squid:S1854»"7Remove this useless assignment to local variable "map".(™Ş­Ôşÿÿÿÿ8òÁñíğ-
+}squid:S2293—"YReplace the type specification in this constructor call with the diamond operator ("<>").(–°áĞşÿÿÿÿ8òÁñíğ-
+[squid:S2589À"7Remove this expression which always evaluates to "true"(Ê·ì‰øÿÿÿÿ8òÁñíğ-
+nsquid:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(´ÅŠ¼8òÁñíğ-
+fsquid:S2095¾"GUse try-with-resources or close this "Statement" in a "finally" clause.(§ñÆ­8òÁñíğ-
+Psquid:S4925("-Remove this "Class.forName()", it is useless.(İˆùÿÿÿÿ8‘¯´‘ú-
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(éäÓşÿÿÿÿ8òÁñíğ-
 Isquid:S1481ß"*Remove this unused "table" local variable.(ŒÁ“Œ8òÁñíğ-
+`squid:S2259W"BA "NullPointerException" could be thrown; "conn" is nullable here.(´ÅŠ¼8òÁñíğ-
+asquid:S2259¾"BA "NullPointerException" could be thrown; "conn" is nullable here.(§ñÆ­8òÁñíğ-
 W
 squid:S106†"9Replace this use of System.out or System.err by a logger.(œ²Àº8òÁñíğ-
-vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(éäÓşÿÿÿÿ8òÁñíğ-
-Ksquid:S1905¾",Remove this unnecessary cast to "Statement".(§ñÆ­8òÁñíğ-
-`squid:S2259z"BA "NullPointerException" could be thrown; "conn" is nullable here.(´ÅŠ¼8òÁñíğ-
-Psquid:S4925("-Remove this "Class.forName()", it is useless.(İˆùÿÿÿÿ8Õğùîğ-
 |squid:S2293Q"YReplace the type specification in this constructor call with the diamond operator ("<>").(âõ’Êøÿÿÿÿ8òÁñíğ-
-asquid:S2259¾"BA "NullPointerException" could be thrown; "conn" is nullable here.(§ñÆ­8òÁñíğ-
-fsquid:S2095¾"GUse try-with-resources or close this "Statement" in a "finally" clause.(§ñÆ­8òÁñíğ-
-}squid:S2293è"YReplace the type specification in this constructor call with the diamond operator ("<>").(±êı€ıÿÿÿÿ8òÁñíğ-
-esquid:S2095¿"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(—Ï‰88òÁñíğ-
-Gsquid:S1148¤"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8òÁñíğ-
-Gsquid:S1148É"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8òÁñíğ-
-|squid:S2293t"YReplace the type specification in this constructor call with the diamond operator ("<>").(–°áĞşÿÿÿÿ8òÁñíğ-
-Xsquid:S1854ß"9Remove this useless assignment to local variable "table".(ŒÁ“Œ8òÁñíğ-
-Lsquid:S1481»"(Remove this unused "map" local variable.(™Ş­Ôşÿÿÿÿ8òÁñíğ-
 Msquid:S1481Ş".Remove this unused "tableName" local variable.(¯ì€š8òÁñíğ-
-nsquid:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(´ÅŠ¼8òÁñíğ-
-}squid:S2293—"YReplace the type specification in this constructor call with the diamond operator ("<>").(–°áĞşÿÿÿÿ8òÁñíğ-
-jsquid:S1192Ş"KDefine a constant instead of duplicating this literal "t_run_shop" 3 times.(¯ì€š8òÁñíğ-
-asquid:S2259"BA "NullPointerException" could be thrown; "conn" is nullable here.(´ÅŠ¼8òÁñíğ-
-}squid:S2293›"YReplace the type specification in this constructor call with the diamond operator ("<>").(…İåúÿÿÿÿ8òÁñíğ-
-@squid:S1643›"Use a StringBuilder instead.(Œıû£ùÿÿÿÿ8òÁñíğ-
-[squid:S1854»"7Remove this useless assignment to local variable "map".(™Ş­Ôşÿÿÿÿ8òÁñíğ-
-ssquid:S2068#"V'PASSWORD' detected in this expression, review this potentially hard-coded credential.(é­›8òÁñíğ-
-[squid:S2589À"7Remove this expression which always evaluates to "true"(Ê·ì‰øÿÿÿÿ8òÁñíğ-
-Tsquid:S1481—"0Remove this unused "columnTypes" local variable.(–°áĞşÿÿÿÿ8òÁñíğ-
-\squid:S1854Ş"=Remove this useless assignment to local variable "tableName".(¯ì€š8òÁñíğ-

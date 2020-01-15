@@ -19,3 +19,9 @@ h
 8src/main/java/com/code/generator/utils/DatabaseUtil.java,6\b\6b1c1b448da776fbedd497b39c96ea8ddc871f91
 l
 <code-generator/src/main/resources/generatorTemplate/main.ftl,8\d\8d5ee8c779bd78354ca4a69f0981c48144a52a85
+q
+Acode-generator/src/main/resources/generatorTemplate/converter.ftl,5\8\58420582e1c50f170969506bd501c016ebd65abf
+u
+Ecode-generator/src/main/resources/generatorTemplate/feignFallback.ftl,7\d\7dce1155c577e2d3b5c159eb3208522d3863ca22
+n
+>code-generator/src/main/resources/generatorTemplate/mapper.ftl,f\6\f6a98295075e879ab08d76f4a43c0f964ddca9bb
