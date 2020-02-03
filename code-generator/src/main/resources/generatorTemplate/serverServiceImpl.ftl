@@ -27,17 +27,17 @@ public class ${modelNameUpperCamel}ServiceImpl implements ${modelNameUpperCamel}
     private ${modelNameUpperCamel}Mapper ${modelNameLowerCamel}Mapper;
 
     @Override
-    public ResponseResult<List<Res${modelNameUpperCamel}VO>> getList(Req${modelNameUpperCamel}VO req${modelNameLowerCamel}VO) {
+    public ResponseResult<List<Res${modelNameUpperCamel}VO>> getList(${modelNameUpperCamel}DTO ${modelNameLowerCamel}DTO) {
         Example queryExample = new Example(${modelNameUpperCamel}.class);
         List<${modelNameUpperCamel}> results = ${modelNameLowerCamel}Mapper.selectByExample(queryExample);
         return ResponseResult.success(${modelNameUpperCamel}Converter.INSTANCE.${modelNameLowerCamel}s2Res${modelNameUpperCamel}VOs(results));
     }
 
     @Override
-    public ResponseResult<Res${modelNameUpperCamel}VO> getDetail(${modelNameUpperCamel}DTO ${modelNameUpperCamel}DTO) {
+    public ResponseResult<Res${modelNameUpperCamel}VO> getDetail(${modelNameUpperCamel}DTO ${modelNameLowerCamel}DTO) {
         Example queryExample = new Example(${modelNameUpperCamel}.class);
         queryExample.and().andEqualTo("deleted", SysConsts.SYS_NO)
-                .andEqualTo("id", ${modelNameUpperCamel}DTO.getId())
+                .andEqualTo("id", ${modelNameLowerCamel}DTO.getId())
                 .andEqualTo("organizationEntityId", WorkUtil.getOrgId());
         ${modelNameUpperCamel} result = ${modelNameLowerCamel}Mapper.selectOneByExample(queryExample);
         return ResponseResult.success( ${modelNameUpperCamel}Converter.INSTANCE.${modelNameLowerCamel}2Res${modelNameUpperCamel}VO(result));

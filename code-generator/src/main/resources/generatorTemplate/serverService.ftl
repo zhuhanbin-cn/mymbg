@@ -14,12 +14,12 @@ import java.util.List;
 public interface ${modelNameUpperCamel}Service {
 	/**
 	 * 获取${comment}列表
-	 * @param req${modelNameUpperCamel}VO
+	 * @param req${modelNameLowerCamel}VO
 	 * @return ResponseResult<List<Res${modelNameUpperCamel}VO>>
 	 * @author: ${author}
 	 * @create: ${date}
 	 */
-	ResponseResult<List<Res${modelNameUpperCamel}VO>> getList(Req${modelNameUpperCamel}VO req${modelNameUpperCamel}VO);
+	ResponseResult<List<Res${modelNameUpperCamel}VO>> getList(${modelNameUpperCamel}DTO ${modelNameLowerCamel}DTO);
 	/**
 	 * 分页${comment}列表
 	 * @param ${modelNameLowerCamel}DTO
@@ -28,36 +28,36 @@ public interface ${modelNameUpperCamel}Service {
 	ResponseResult<Res${modelNameUpperCamel}VO > getListPageSize(${modelNameUpperCamel}DTO ${modelNameLowerCamel}DTO);
 	/**
 	 * 获取单个${comment}详情
-	 * @param  ${modelNameUpperCamel}DTO
+	 * @param  ${modelNameLowerCamel}DTO
 	 * @return	ResponseResult<Res${modelNameUpperCamel}VO>
 	 * @author: ${author}
 	 * @create: ${date}
 	 */
-	ResponseResult<Res${modelNameUpperCamel}VO> getDetail(${modelNameUpperCamel}DTO ${modelNameUpperCamel}DTO);
+	ResponseResult<Res${modelNameUpperCamel}VO> getDetail(${modelNameUpperCamel}DTO ${modelNameLowerCamel}DTO);
 	/**
 	 * 新增${comment}
-	 * @param ${modelNameUpperCamel}DTO
+	 * @param ${modelNameLowerCamel}DTO
 	 * @return ResponseResult<List<Res${modelNameUpperCamel}VO>>
 	 * @author: ${author}
 	 * @create: ${date}
 	 */
-	ResponseResult add(${modelNameUpperCamel}DTO ${modelNameUpperCamel}DTO);
+	ResponseResult add(${modelNameUpperCamel}DTO ${modelNameLowerCamel}DTO);
 	/**
 	 * 删除${comment}
-	 * @param ${modelNameUpperCamel}DTO
+	 * @param ${modelNameLowerCamel}DTO
 	 * @return ResponseResult<Res${modelNameUpperCamel}VO>
 	 * @author: ${author}
 	 * @create: ${date}
 	 */
-	ResponseResult delete(${modelNameUpperCamel}DTO ${modelNameUpperCamel}DTO);
+	ResponseResult delete(${modelNameUpperCamel}DTO ${modelNameLowerCamel}DTO);
 	/**
 	 * 更新${comment}
-	 * @param ${modelNameUpperCamel}DTO
+	 * @param ${modelNameLowerCamel}DTO
 	 * @return ResponseResult<Res${modelNameUpperCamel}VO>
 	 * @author: ${author}
 	 * @create: ${date}
 	 */
-	ResponseResult update(${modelNameUpperCamel}DTO ${modelNameUpperCamel}DTO);
+	ResponseResult update(${modelNameUpperCamel}DTO ${modelNameLowerCamel}DTO);
 	
 	
 }
