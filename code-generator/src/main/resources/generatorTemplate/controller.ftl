@@ -34,7 +34,7 @@ public class ${modelNameUpperCamel}Controller {
     @ApiResponse(code = 200, response = ResponseResult.class, message = "success")
     @PostMapping("/getList")
 	public ResponseResult<List<Res${modelNameUpperCamel}VO>> getList(Req${modelNameUpperCamel}VO req${modelNameUpperCamel}VO) {
-        return ${modelNameLowerCamel}Service.getList(req${modelNameUpperCamel}VO);
+        return ${modelNameLowerCamel}Service.getList(${modelNameUpperCamel}Converter.INSTANCE.req${modelNameUpperCamel}VO2${modelNameUpperCamel}DTO(req${modelNameUpperCamel}VO));
     }
 	
 	@ApiOperation(value = "分页获取${comment}列表", notes = "获取${comment}列表")
