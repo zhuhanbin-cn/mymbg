@@ -27,7 +27,7 @@ public class ${modelNameUpperCamel}ServiceImpl implements ${modelNameUpperCamel}
     private ${modelNameUpperCamel}Mapper ${modelNameLowerCamel}Mapper;
 
     @Override
-    public ResponseResult<List<Res${modelNameUpperCamel}VO>> getList(${modelNameUpperCamel}DTO ${modelNameLowerCamel}DTO) {
+    public ResponseResult<List<Res${modelNameUpperCamel}VO>> getList() {
         Example queryExample = new Example(${modelNameUpperCamel}.class);
         List<${modelNameUpperCamel}> results = ${modelNameLowerCamel}Mapper.selectByExample(queryExample);
         return ResponseResult.success(${modelNameUpperCamel}Converter.INSTANCE.${modelNameLowerCamel}s2Res${modelNameUpperCamel}VOs(results));
@@ -81,28 +81,6 @@ public class ${modelNameUpperCamel}ServiceImpl implements ${modelNameUpperCamel}
 
     @Override
     public ResponseResult<Res${modelNameUpperCamel}VO> update(${modelNameUpperCamel}DTO ${modelNameLowerCamel}DTO) {
-        Example queryAccount = new Example(${modelNameUpperCamel}.class);
-        if (!DataUtil.isNullOrEmpty(${modelNameLowerCamel}DTO.getAccount())) {
-            queryAccount.and().andEqualTo("deleted",  SysConsts.SYS_NO)
-                    .andEqualTo("account",${modelNameLowerCamel}DTO.getAccount())
-                    .andEqualTo("organizationEntityId", WorkUtil.getOrgId())
-                    .andNotEqualTo("id",${modelNameLowerCamel}DTO.getId());
-            List<${modelNameUpperCamel}>  results = ${modelNameLowerCamel}Mapper.selectByExample(queryAccount);
-            if (results.size()>0){
-                throw new MyException(${modelNameLowerCamel}DTO, "已经有相同账号的店铺！");
-            }
-        }
-
-        Example queryNamePlatformId = new Example(${modelNameUpperCamel}.class);
-        queryNamePlatformId.and().andEqualTo("deleted",  SysConsts.SYS_NO)
-                .andEqualTo("name",${modelNameLowerCamel}DTO.getName())
-                .andEqualTo("platformId",${modelNameLowerCamel}DTO.getPlatformId())
-                .andNotEqualTo("id",${modelNameLowerCamel}DTO.getId());
-        List<${modelNameUpperCamel}> results = ${modelNameLowerCamel}Mapper.selectByExample(queryNamePlatformId);
-        if (results.size()>0){
-            throw new MyException(${modelNameLowerCamel}DTO, "已经在该平台上有相同名称的店铺！");
-        }
-
         ${modelNameUpperCamel} bean = new ${modelNameUpperCamel}();
         bean.setId(${modelNameLowerCamel}DTO.getId());
         bean.setName(${modelNameLowerCamel}DTO.getName());

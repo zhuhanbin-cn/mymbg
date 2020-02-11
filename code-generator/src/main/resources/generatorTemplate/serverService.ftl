@@ -14,12 +14,11 @@ import java.util.List;
 public interface ${modelNameUpperCamel}Service {
 	/**
 	 * 获取${comment}列表
-	 * @param req${modelNameLowerCamel}VO
 	 * @return ResponseResult<List<Res${modelNameUpperCamel}VO>>
 	 * @author: ${author}
 	 * @create: ${date}
 	 */
-	ResponseResult<List<Res${modelNameUpperCamel}VO>> getList(${modelNameUpperCamel}DTO ${modelNameLowerCamel}DTO);
+	ResponseResult<List<Res${modelNameUpperCamel}VO>> getList();
 	/**
 	 * 分页${comment}列表
 	 * @param ${modelNameLowerCamel}DTO

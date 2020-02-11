@@ -194,22 +194,18 @@ public class CodeGenerator {
 
     public static void main(String[] args) throws ClassNotFoundException {
 
-
-
-
         //shop库中
         //genCode("t_run_shop_ip","ShopIp");
         //genCode("t_run_shop_platform","ShopPlatform");
         //genCode("t_run_shop_user","ShopUser");
-        genCode("t_sys_browser", "Browser");
-        genCode("t_sys_language", "Language");
+        genCode("t_sys_cloud_status", "CloudStatus");
+       // genCode("t_sys_language", "Language");
         //genMain("EbbShopApplication");
 
         //ip_platform
         //genCode("t_run_ip","Ip");
         //genCode("t_run_ip_platform","IpPlatform");
         //genMain("EbbIpPlatformApplication");
-
 
         //genCode("输入表名","输入自定义Model名称");
 
@@ -275,8 +271,11 @@ public class CodeGenerator {
 
         //responseVO
         genJava(data, modelName, PROJECT_PATH + STORAGE_PATH_RESPONSEVO, "Res", "VO", "VO.ftl");
+        //idVO
+        genJava(data, "Id", PROJECT_PATH + STORAGE_PATH_RESPONSEVO, "Req", "VO", "IDVO.ftl");
+
         //DTO
-        genJava(data, modelName, PROJECT_PATH + STORAGE_PATH_DTO, "", "DTO", "VO.ftl");
+        genJava(data, modelName, PROJECT_PATH + STORAGE_PATH_DTO, "", "DTO", "DTO.ftl");
 
         //feign
         genJava(data, modelName, PROJECT_PATH + STORAGE_PATH_FEIGN, "", "ServiceFeign", "feignService.ftl");
