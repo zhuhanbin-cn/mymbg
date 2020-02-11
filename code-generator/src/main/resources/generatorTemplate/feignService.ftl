@@ -29,8 +29,8 @@ public interface ${modelNameUpperCamel}ServiceFeign {
 	 * @param req${modelNameUpperCamel}VO
 	 * @return ResponseResult
 	 */
-	@PostMapping("${apiurl}/getdetail")
-	ResponseResult<Res${modelNameUpperCamel}VO> getdetail(@RequestBody Req${modelNameUpperCamel}VO req${modelNameUpperCamel}VO);
+	@PostMapping("${apiurl}/getDetail")
+	ResponseResult<Res${modelNameUpperCamel}VO> getDetail(@RequestBody Req${modelNameUpperCamel}VO req${modelNameUpperCamel}VO);
 
 
 	/**
