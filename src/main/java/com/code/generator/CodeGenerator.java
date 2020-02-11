@@ -115,7 +115,7 @@ public class CodeGenerator {
     /**
      * 生成config存放路径
      */
-    private static final String STORAGE_PATH_SERVICE_CONFIG = STORAGE_PATH_SERVICE + "config/";
+    private static final String STORAGE_PATH_SERVICE_CONFIG = STORAGE_PATH_MAIN + "config/";
 
 
     /**
@@ -288,10 +288,10 @@ public class CodeGenerator {
         //control
         genJava(data, modelName, PROJECT_PATH + STORAGE_PATH_CONTROLLER, "", "Controller", "controller.ftl");
         //converter
-        genJava(data, modelName, PROJECT_PATH + STORAGE_PATH_CONVERTER, "", "Converter", "converter.ftl");
+        genJava(data, modelName, PROJECT_PATH + STORAGE_PATH_SERVICE_CONFIG, "", "Converter", "converter.ftl");
 
-        genJava(data, "EbbShopApplication", PROJECT_PATH + STORAGE_PATH_MAIN, "", "", "main.ftl");
-        genJava(data, "SwaggerConfig", PROJECT_PATH + STORAGE_PATH_SERVICE_CONFIG, "", "", "SwaggerConfig.ftl");
+        genJava(data, "Ebb"+modelName+"Application", PROJECT_PATH + STORAGE_PATH_MAIN, "", "", "main.ftl");
+        genJava(data, "SwaggerConfig", PROJECT_PATH + STORAGE_PATH_MAIN, "", "", "SwaggerConfig.ftl");
 
 
         //因为实体有继承baseEntity，所以要对entity重写

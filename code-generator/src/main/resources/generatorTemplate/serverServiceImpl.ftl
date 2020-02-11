@@ -6,7 +6,7 @@ import ${serverPackage}.service.${modelNameUpperCamel}Service;
 import ${serverPackage}.dao.${modelNameUpperCamel}Mapper;
 import ${clientPackage}.vo.Res${modelNameUpperCamel}VO;
 import ${clientPackage}.vo.Req${modelNameUpperCamel}VO;
-import ${clientPackage}.vo.${modelNameUpperCamel}DTO;
+import ${clientPackage}.dto.${modelNameUpperCamel}DTO;
 import com.zjbdos.springcloud.common.core.vo.ResponseResult;
 import com.zjbdos.springcloud.common.core.util.DataUtil;
 

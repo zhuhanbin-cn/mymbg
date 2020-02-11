@@ -3,7 +3,7 @@ package ${serverPackage}.converter;
 import ${serverPackage}.entity.${modelNameUpperCamel};
 import ${clientPackage}.vo.Req${modelNameUpperCamel}VO;
 import ${clientPackage}.vo.Res${modelNameUpperCamel}VO;
-import ${clientPackage}.vo.${modelNameUpperCamel}DTO;
+import ${clientPackage}.dto.${modelNameUpperCamel}DTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 import java.util.List;

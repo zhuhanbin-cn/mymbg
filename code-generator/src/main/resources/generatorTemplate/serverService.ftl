@@ -1,7 +1,7 @@
 package ${serverPackage}.service;
 import ${clientPackage}.vo.Res${modelNameUpperCamel}VO;
 import ${clientPackage}.vo.Req${modelNameUpperCamel}VO;
-import ${clientPackage}.vo.${modelNameUpperCamel}DTO;
+import ${clientPackage}.dto.${modelNameUpperCamel}DTO;
 import com.zjbdos.springcloud.common.core.vo.ResponseResult;
 import tk.mybatis.mapper.entity.Example;
 import java.util.List;
