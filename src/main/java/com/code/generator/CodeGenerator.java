@@ -36,7 +36,7 @@ public class CodeGenerator {
     // static final String MODULE_NAME = "ipplatform";
 
     /**
-     * feign客户端请求路径
+     * feign客户端请求路径,这里不太对
      */
     static final String API_URL = "/api/" + BASE_MODULE_NAME;
 
@@ -262,7 +262,7 @@ public class CodeGenerator {
         data.put("modelNameUpperCamel", modelName);
         data.put("modelNameLowerCamel", tableNameConvertLowerCamel(modelName));
         data.put("applicationName", APPLICATION_NAME);
-        data.put("apiurl", API_URL);
+        data.put("apiurl",  "/api/" + tableNameConvertLowerCamel(modelName));
         data.put("comment", comment);
 
 
