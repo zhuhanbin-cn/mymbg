@@ -12,7 +12,9 @@ import org.mybatis.generator.internal.DefaultShellCallback;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -34,7 +36,7 @@ public class CodeGenerator {
     // static final String MODULE_NAME = "ipplatform";
 
     /**
-     * feign客户端请求路径
+     * feign客户端请求路径,这里不太对
      */
     static final String API_URL = "/api/" + BASE_MODULE_NAME;
 
@@ -192,27 +194,18 @@ public class CodeGenerator {
 
     public static void main(String[] args) throws ClassNotFoundException {
 
-
-
-
         //shop库中
         //genCode("t_run_shop_ip","ShopIp");
         //genCode("t_run_shop_platform","ShopPlatform");
         //genCode("t_run_shop_user","ShopUser");
-        genCode("t_sys_shop_platform", "ShopPlatform");
-        genCode("t_sys_cloud_platform", "CloudPlatform");
-
-        genCode("t_sys_cloud_api", "CloudAPI");
-        genCode("t_sys_cloud_image", "CloudImage");
-        genCode("t_sys_cloud_region", "CloudRegion");
-        genCode("t_sys_cloud_flavor", "CloudFlavor");
+        genCode("t_sys_cloud_status", "CloudStatus");
+       // genCode("t_sys_language", "Language");
         //genMain("EbbShopApplication");
 
         //ip_platform
         //genCode("t_run_ip","Ip");
         //genCode("t_run_ip_platform","IpPlatform");
         //genMain("EbbIpPlatformApplication");
-
 
         //genCode("输入表名","输入自定义Model名称");
 
@@ -269,7 +262,7 @@ public class CodeGenerator {
         data.put("modelNameUpperCamel", modelName);
         data.put("modelNameLowerCamel", tableNameConvertLowerCamel(modelName));
         data.put("applicationName", APPLICATION_NAME);
-        data.put("apiurl", API_URL);
+        data.put("apiurl",  "/api/" + tableNameConvertLowerCamel(modelName));
         data.put("comment", comment);
 
 
@@ -278,8 +271,11 @@ public class CodeGenerator {
 
         //responseVO
         genJava(data, modelName, PROJECT_PATH + STORAGE_PATH_RESPONSEVO, "Res", "VO", "VO.ftl");
+        //idVO
+        genJava(data, "Id", PROJECT_PATH + STORAGE_PATH_RESPONSEVO, "Req", "VO", "IDVO.ftl");
+
         //DTO
-        genJava(data, modelName, PROJECT_PATH + STORAGE_PATH_DTO, "", "DTO", "VO.ftl");
+        genJava(data, modelName, PROJECT_PATH + STORAGE_PATH_DTO, "", "DTO", "DTO.ftl");
 
         //feign
         genJava(data, modelName, PROJECT_PATH + STORAGE_PATH_FEIGN, "", "ServiceFeign", "feignService.ftl");
@@ -292,10 +288,10 @@ public class CodeGenerator {
         //control
         genJava(data, modelName, PROJECT_PATH + STORAGE_PATH_CONTROLLER, "", "Controller", "controller.ftl");
         //converter
-        genJava(data, modelName, PROJECT_PATH + STORAGE_PATH_CONVERTER, "", "Converter", "converter.ftl");
+        genJava(data, modelName, PROJECT_PATH + STORAGE_PATH_SERVICE_CONFIG, "", "Converter", "converter.ftl");
 
-        genJava(data, "EbbShopApplication", PROJECT_PATH + STORAGE_PATH_MAIN, "", "", "main.ftl");
-        genJava(data, "SwaggerConfig", PROJECT_PATH + STORAGE_PATH_SERVICE_CONFIG, "", "", "SwaggerConfig.ftl");
+        genJava(data, "Ebb"+modelName+"Application", PROJECT_PATH + STORAGE_PATH_MAIN, "", "", "main.ftl");
+        genJava(data, "SwaggerConfig", PROJECT_PATH + STORAGE_PATH_MAIN, "", "", "SwaggerConfig.ftl");
 
 
         //因为实体有继承baseEntity，所以要对entity重写
@@ -356,7 +352,7 @@ public class CodeGenerator {
         //Mapper.xml
         SqlMapGeneratorConfiguration sqlMapGeneratorConfiguration = new SqlMapGeneratorConfiguration();
         sqlMapGeneratorConfiguration.setTargetProject(PROJECT_PATH + RESOURCES_PATH);
-        sqlMapGeneratorConfiguration.setTargetPackage(MAPPER_PACKAGE);
+        sqlMapGeneratorConfiguration.setTargetPackage("mapper");
         context.setSqlMapGeneratorConfiguration(sqlMapGeneratorConfiguration);
 
 
