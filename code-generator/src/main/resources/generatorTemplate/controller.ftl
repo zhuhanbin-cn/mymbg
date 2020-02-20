@@ -31,42 +31,42 @@ public class ${modelNameUpperCamel}Controller {
     @Autowired
     private ${modelNameUpperCamel}Service ${modelNameLowerCamel}Service;
 	
-	@ApiOperation(value = "获取${comment}列表:${moduleDir}", notes = "获取${comment}列表")
+	@ApiOperation(value = "获取${comment}列表:${serverDir}", notes = "获取${comment}列表")
     @ApiResponse(code = 200, response = ResponseResult.class, message = "success")
     @PostMapping("/getList")
 	public ResponseResult<List<Res${modelNameUpperCamel}VO>> getList() {
         return ${modelNameLowerCamel}Service.getList();
     }
 	
-	@ApiOperation(value = "分页获取${comment}列表:${moduleDir}", notes = "获取${comment}列表")
+	@ApiOperation(value = "分页获取${comment}列表:${serverDir}", notes = "获取${comment}列表")
     @ApiResponse(code = 200, response = ResponseResult.class, message = "success")
     @PostMapping("/get${modelNameUpperCamel}ListPageSize")
     public ResponseResult<Res${modelNameUpperCamel}VO> get${modelNameUpperCamel}ListPageSize(@RequestBody Req${modelNameUpperCamel}VO req${modelNameUpperCamel}VO) {
         return ${modelNameLowerCamel}Service.getListPageSize(${modelNameUpperCamel}Converter.INSTANCE.req${modelNameUpperCamel}VO2${modelNameUpperCamel}DTO(req${modelNameUpperCamel}VO));
     }
 	
-	@ApiOperation(value = "获取${comment}详细信息:${moduleDir}", notes = "获取${comment}详细信息")
+	@ApiOperation(value = "获取${comment}详细信息:${serverDir}", notes = "获取${comment}详细信息")
     @ApiResponse(code = 200, response = ResponseResult.class, message = "success")
     @PostMapping("/getDetail")
     public ResponseResult<Res${modelNameUpperCamel}VO> getDetail(@RequestBody Req${modelNameUpperCamel}VO req${modelNameUpperCamel}VO) {
         return ${modelNameLowerCamel}Service.getDetail(${modelNameUpperCamel}Converter.INSTANCE.req${modelNameUpperCamel}VO2${modelNameUpperCamel}DTO(req${modelNameUpperCamel}VO));
     }
  
-    @ApiOperation(value = "新增${comment}:${moduleDir}", notes = "新增${comment}")
+    @ApiOperation(value = "新增${comment}:${serverDir}", notes = "新增${comment}")
     @ApiResponse(code = 200, response = ResponseResult.class, message = "success")
     @PostMapping("/add")
     public ResponseResult add(@RequestBody Req${modelNameUpperCamel}VO req${modelNameUpperCamel}VO) {
         return ${modelNameLowerCamel}Service.add(${modelNameUpperCamel}Converter.INSTANCE.req${modelNameUpperCamel}VO2${modelNameUpperCamel}DTO(req${modelNameUpperCamel}VO));
     }
 
-    @ApiOperation(value = "删除${comment}:${moduleDir}", notes = "删除${comment}")
+    @ApiOperation(value = "删除${comment}:${serverDir}", notes = "删除${comment}")
     @ApiResponse(code = 200, response = ResponseResult.class, message = "success")
     @PostMapping("/delete")
     public ResponseResult delete(@RequestBody ReqIdVO reqIdVOs) {
         return ${modelNameLowerCamel}Service.delete(reqIdVOs.getIds());
     }
 
-    @ApiOperation(value = "更新${comment}:${moduleDir}", notes = "更新${comment}")
+    @ApiOperation(value = "更新${comment}:${serverDir}", notes = "更新${comment}")
     @ApiResponse(code = 200, response = ResponseResult.class, message = "success")
     @PostMapping("/update")
     public ResponseResult update(@RequestBody Req${modelNameUpperCamel}VO req${modelNameUpperCamel}VO) {
