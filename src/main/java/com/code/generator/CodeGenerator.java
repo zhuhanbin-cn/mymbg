@@ -264,6 +264,7 @@ public class CodeGenerator {
         data.put("applicationName", APPLICATION_NAME);
         data.put("apiurl",  "/api/" + tableNameConvertLowerCamel(modelName));
         data.put("comment", comment);
+        data.put("serverDir",Server_DIR);
 
 
         //requestVO
