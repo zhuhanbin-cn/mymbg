@@ -12,9 +12,7 @@ import org.mybatis.generator.internal.DefaultShellCallback;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -115,7 +113,7 @@ public class CodeGenerator {
     /**
      * 生成config存放路径
      */
-    private static final String STORAGE_PATH_SERVICE_CONFIG = STORAGE_PATH_SERVICE + "config/";
+    private static final String STORAGE_PATH_SERVICE_CONFIG = STORAGE_PATH_MAIN + "config/";
 
 
     /**
@@ -201,8 +199,13 @@ public class CodeGenerator {
         //genCode("t_run_shop_ip","ShopIp");
         //genCode("t_run_shop_platform","ShopPlatform");
         //genCode("t_run_shop_user","ShopUser");
-        genCode("t_sys_browser", "Browser");
-        genCode("t_sys_language", "Language");
+        genCode("t_sys_shop_platform", "ShopPlatform");
+        genCode("t_sys_cloud_platform", "CloudPlatform");
+
+        genCode("t_sys_cloud_api", "CloudAPI");
+        genCode("t_sys_cloud_image", "CloudImage");
+        genCode("t_sys_cloud_region", "CloudRegion");
+        genCode("t_sys_cloud_flavor", "CloudFlavor");
         //genMain("EbbShopApplication");
 
         //ip_platform
